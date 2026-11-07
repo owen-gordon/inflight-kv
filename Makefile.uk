@@ -1,0 +1,2 @@
+$(eval $(call addlib,appkv))
+APPKV_SRCS-y += $(APPKV_BASE)/kv.c

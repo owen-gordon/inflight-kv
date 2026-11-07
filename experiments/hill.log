@@ -1,0 +1,37 @@
+# 1 sfo,dal,was,fra,sin    mean  56.1%  [sfo  40%/47w  dal  39%/47w  was  54%/47w  fra  73%/94w  sin  75%/94w]
+start sfo,dal,was,fra,sin 56.1%
+# 2 sfo,was,fra,sin        mean  66.8%  [sfo  50%/49w  was  59%/50w  fra  78%/99w  sin  80%/99w]
+# 3 sfo,dal,was,sin        mean 900.0%  [sfo  61%/58w  dal  39%/51w  was  96%/80w  sin  90%/95w]  VALUE LOST  (idle nodes awake: ['fra'])
+# 4 sfo,dal,was,fra        mean  89.9%  [sfo  86%/60w  dal  75%/79w  was  99%/38w  fra 100%/55w]  (idle nodes awake: ['sin'])
+# 5 sfo,dal,fra,sin        mean  92.4%  [sfo  86%/61w  dal  92%/93w  fra  97%/64w  sin  95%/101w]  (idle nodes awake: ['was'])
+# 6 dal,was,fra,sin        mean  93.7%  [dal  97%/98w  was  90%/52w  fra  99%/53w  sin  89%/105w]  (idle nodes awake: ['sfo'])
+# 7 sin,dal,was,fra,sfo    mean  77.1%  [sin  95%/89w  dal  77%/88w  was  44%/38w  fra  90%/94w  sfo  79%/85w]
+# 8 dal,sfo,was,fra,sin    mean  54.2%  [dal  38%/43w  sfo  43%/43w  was  50%/43w  fra  67%/86w  sin  72%/86w]
+# 9 sfo,sin,was,fra,dal    mean  48.3%  [sfo  56%/68w  sin  61%/68w  was  48%/35w  fra  48%/69w  dal  30%/34w]
+>> move to sfo,sin,was,fra,dal (56.1% -> 48.3%)
+#10 fra,sin,was,sfo,dal    mean  51.2%  [fra  61%/77w  sin  68%/77w  was  39%/39w  sfo  33%/39w  dal  55%/77w]
+#11 sfo,was,fra,dal        mean  80.2%  [sfo  78%/66w  was  83%/62w  fra  91%/105w  dal  69%/71w]  (idle nodes awake: ['sin'])
+#12 sin,was,fra,dal        mean  57.7%  [sin  68%/78w  was  46%/39w  fra  51%/78w  dal  67%/77w]
+#13 sfo,sin,was,fra        mean  68.3%  [sfo  60%/74w  sin  77%/81w  was  64%/47w  fra  72%/65w]  (idle nodes awake: ['dal'])
+#14 sin,sfo,was,fra,dal    mean  56.0%  [sin  73%/78w  sfo  37%/39w  was  47%/39w  fra  55%/75w  dal  68%/78w]
+#15 was,sin,sfo,fra,dal    mean  76.7%  [was  87%/70w  sin  83%/77w  sfo  71%/74w  fra  69%/71w  dal  73%/77w]
+#16 dal,sin,was,fra,sfo    mean  81.8%  [dal  82%/73w  sin  92%/66w  was  84%/72w  fra  71%/55w  sfo  80%/52w]
+
+best sfo,sin,was,fra,dal mean awake 48.3%  (16 rings measured, local optimum)
+all measured, best first:
+  dal,fra,was,sin,sfo     48.3%
+  dal,fra,sin,was,sfo     51.2%
+  dal,sfo,was,fra,sin     54.2%
+  dal,fra,was,sfo,sin     56.0%
+  dal,sfo,sin,fra,was     56.1%
+  dal,fra,was,sin         57.7%
+  fra,sin,sfo,was         66.8%
+  fra,sfo,sin,was         68.3%
+  dal,fra,sfo,sin,was     76.7%
+  dal,sin,sfo,fra,was     77.1%
+  dal,fra,was,sfo         80.2%
+  dal,sfo,fra,was,sin     81.8%
+  dal,sfo,fra,was         89.9%
+  dal,fra,sin,sfo         92.4%
+  dal,sin,fra,was         93.7%
+  dal,sfo,sin,was        failed
